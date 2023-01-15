@@ -1,0 +1,67 @@
+body {
+    background-color: #292929;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: arial;
+    height: 100vh;
+}
+.cardBox {
+    perspective: 500px;     /*요소에 원근법을 더함  돌아가는거 밑변 보면 있을때랑 없을때랑 차이가 있음*/
+    margin: 15px;
+         
+}
+
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .5s ease;
+    width: 150px;
+}
+
+.kakao {
+    background:  #F7E600;
+}
+.naver {
+    background: #2DB400;
+}
+.facebook {
+    background: #3b5998
+}
+.youtube {
+    background: #c4302b;
+}
+
+.cardFront,
+.cardBack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    backface-visibility: hidden;
+    border-radius: 10%;
+}
+
+.cardFront {
+    font-size: 30px;
+    justify-content: center;    /*flex 가로 정렬*/
+    align-items: center;        /*flex 세로정렬*/
+    display: flex;              /*flex 정의*/
+}
+
+.cardBack {
+    font-size: 100px;
+    font-weight: 900;
+    justify-content: center;    /*flex 가로 정렬*/
+    align-items: center;        /*flex 세로 정렬*/
+    display: flex;              /*flex 정의*/
+}
+
+.cardBox:hover .card{
+    transform: rotateY(180deg);
+}
+.cardBack{
+    transform: rotateY(180deg);
+}

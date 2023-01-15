@@ -1,0 +1,42 @@
+body{
+    background:#ffed03;
+    margin: 0;
+    padding: 0;
+
+}
+button{
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 4px black solid;
+    border-radius: 10px;
+    transition: .5s;
+    outline: none;
+    cursor: pointer;
+}
+.line{
+    background: #262626;
+    height: 8px;
+    width: 80px;
+    display: block;
+    margin: 16px 0;
+    transition: 1s;
+    transform-origin: center;
+}
+
+button:hover{
+    border-radius: 50%;
+}
+button:hover .line:nth-child(1){
+    transform: translateY(24px) rotate(-765deg);
+}
+button:hover .line:nth-child(3){
+    transform: translateY(-24px) rotate(45deg);
+}
+button:hover .line:nth-child(2){
+    opacity: 0;
+}

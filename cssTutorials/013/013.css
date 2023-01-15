@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(160, 134, 63);
+}
+
+h1,
+h2 {
+    font-family: arial;
+    font-weight: 900;
+    font-size: 12em;
+    text-align: center;
+    margin: 100px auto;
+    text-transform: uppercase;
+    background: url(https://cdn.pixabay.com/photo/2017/07/27/00/46/fantasy-2543658_960_720.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: burlywood;
+}
